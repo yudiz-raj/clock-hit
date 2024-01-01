@@ -1,0 +1,80 @@
+{
+    "id": "4851cc28-a2d2-40aa-a29b-460bcab24f42",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 640,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "a1d870cb-5dfa-40da-b80f-e962c09e787e",
+            "label": "container_1",
+            "x": -16,
+            "y": -27,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "740062fb-f177-469a-aa1f-67876159e6db",
+                    "label": "logo",
+                    "texture": {
+                        "key": "logo"
+                    },
+                    "x": 16,
+                    "y": 27,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
+                },
+                {
+                    "type": "Image",
+                    "id": "91438521-ed2c-4282-a77a-46dff5cb347f",
+                    "label": "clock",
+                    "texture": {
+                        "key": "clock"
+                    },
+                    "x": -5,
+                    "y": -68,
+                    "scaleX": 0.4,
+                    "scaleY": 0.41
+                },
+                {
+                    "type": "Image",
+                    "id": "5138602c-fd65-49d6-93f7-feac6baab2bd",
+                    "label": "inactiveClock_hand",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "inactiveClock-hand"
+                    },
+                    "x": -5,
+                    "y": -68,
+                    "scaleX": 0.4,
+                    "scaleY": 0.4,
+                    "originY": 1
+                },
+                {
+                    "type": "Image",
+                    "id": "7dd381d7-1bdf-4a56-b7a0-08e7247f4dc7",
+                    "label": "inactiveClock_face",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "inactiveClock-face"
+                    },
+                    "x": -5,
+                    "y": -68,
+                    "scaleX": 0.4,
+                    "scaleY": 0.4
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

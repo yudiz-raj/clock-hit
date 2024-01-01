@@ -1,0 +1,133 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/game-screen/active-clock.png",
+                "type": "image",
+                "key": "active-clock"
+            },
+            {
+                "url": "assets/images/game-screen/activeClock-face.png",
+                "type": "image",
+                "key": "activeClock-face"
+            },
+            {
+                "url": "assets/images/game-screen/activeClock-hand.png",
+                "type": "image",
+                "key": "activeClock-hand"
+            },
+            {
+                "url": "assets/images/game-screen/blast-1.png",
+                "type": "image",
+                "key": "blast-1"
+            },
+            {
+                "url": "assets/images/game-screen/blast-10.png",
+                "type": "image",
+                "key": "blast-10"
+            },
+            {
+                "url": "assets/images/game-screen/blast-2.png",
+                "type": "image",
+                "key": "blast-2"
+            },
+            {
+                "url": "assets/images/game-screen/blast-3.png",
+                "type": "image",
+                "key": "blast-3"
+            },
+            {
+                "url": "assets/images/game-screen/blast-4.png",
+                "type": "image",
+                "key": "blast-4"
+            },
+            {
+                "url": "assets/images/game-screen/blast-5.png",
+                "type": "image",
+                "key": "blast-5"
+            },
+            {
+                "url": "assets/images/game-screen/blast-6.png",
+                "type": "image",
+                "key": "blast-6"
+            },
+            {
+                "url": "assets/images/game-screen/blast-7.png",
+                "type": "image",
+                "key": "blast-7"
+            },
+            {
+                "url": "assets/images/game-screen/blast-8.png",
+                "type": "image",
+                "key": "blast-8"
+            },
+            {
+                "url": "assets/images/game-screen/blast-9.png",
+                "type": "image",
+                "key": "blast-9"
+            },
+            {
+                "url": "assets/animations/blastAnimation.json",
+                "type": "animation",
+                "key": "blastAnimation"
+            },
+            {
+                "url": "assets/images/game-screen/clock.png",
+                "type": "image",
+                "key": "clock"
+            },
+            {
+                "url": "assets/images/game-screen/game-screen-bg.png",
+                "type": "image",
+                "key": "game-screen-bg"
+            },
+            {
+                "url": "src/scripts/GameManager.js",
+                "type": "script",
+                "key": "GameManager"
+            },
+            {
+                "url": "assets/images/game-screen/glow.png",
+                "type": "image",
+                "key": "glow"
+            },
+            {
+                "url": "src/scenes/Home.js",
+                "type": "sceneFile",
+                "key": "Home"
+            },
+            {
+                "url": "assets/images/game-screen/inactiveClock-face.png",
+                "type": "image",
+                "key": "inactiveClock-face"
+            },
+            {
+                "url": "assets/images/game-screen/inactiveClock-hand.png",
+                "type": "image",
+                "key": "inactiveClock-hand"
+            },
+            {
+                "url": "assets/images/game-screen/level-base.png",
+                "type": "image",
+                "key": "level-base"
+            },
+            {
+                "url": "src/prefabs/Logo.js",
+                "type": "script",
+                "key": "Logo"
+            },
+            {
+                "url": "assets/images/game-screen/witch.png",
+                "type": "image",
+                "key": "witch"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

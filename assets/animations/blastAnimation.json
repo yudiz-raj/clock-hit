@@ -1,0 +1,73 @@
+{
+    "anims": [
+        {
+            "key": "blastAnimation",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "blast-1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blast-2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blast-3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blast-4",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blast-5",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blast-6",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blast-7",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blast-8",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blast-9",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blast-10",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 30,
+            "skipMissedFrames": true,
+            "hideOnComplete": true
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    },
+    "settings": {
+        "sourceLang": "JAVA_SCRIPT",
+        "esModule": false,
+        "generateCode": false
+    }
+}
