@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "editor": "phasereditor2d-launcher -project . -port 1959",
     "editor-remote": "phasereditor2d-launcher -project . -disable-open-browser -public -port 1959"
   },
@@ -28,6 +28,23 @@
   },
   "homepage": "https://github.com/PhaserEditor2D/starter-template-basic-javascript#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.23.7",
+    "jest": "^29.7.0",
+    "jest-canvas-mock": "^2.5.2",
+    "jest-environment-jsdom": "^29.7.0",
     "phasereditor2d-launcher": "^3.32.0"
+  },
+  "dependencies": {
+    "phaser": "^3.70.0",
+    "phaser3spectorjs": "^0.0.8"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "setupFiles": [
+      "<rootDir>src/scenes/setupTests.js"
+    ],
+    "testEnvironment": "jest-environment-jsdom"
   }
 }

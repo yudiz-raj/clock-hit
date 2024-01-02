@@ -1,6 +1,7 @@
 
 // You can write more code here
-gameOptions = {
+import Phaser from "phaser"
+let gameOptions = {
 	gridSize: 40, // 40
 	levelWidth: 8, // 8
 	levelHeight: 8, // 8
@@ -9,7 +10,7 @@ gameOptions = {
 }
 /* START OF COMPILED CODE */
 
-class Level extends Phaser.Scene {
+export default class Level extends Phaser.Scene {
 
 	constructor() {
 		super("Level");
