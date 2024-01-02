@@ -1,6 +1,5 @@
 
 // You can write more code here
-import Phaser from "phaser"
 let gameOptions = {
 	gridSize: 40, // 40
 	levelWidth: 8, // 8
@@ -10,7 +9,7 @@ let gameOptions = {
 }
 /* START OF COMPILED CODE */
 
-export default class Level extends Phaser.Scene {
+class Level extends Phaser.Scene {
 
 	constructor() {
 		super("Level");
@@ -107,6 +106,14 @@ export default class Level extends Phaser.Scene {
 
 		this.editorCreate();
 		this.oGameManager = new GameManager(this);
+		this.input.on("pointermove", () => {
+			if (this.input.x > 0 && this.input.x < 640 && this.input.y > 0 && this.input.y < 960) {
+				this.input.setDefaultCursor('pointer');
+			}
+			else {
+				this.input.setDefaultCursor('default');
+			}
+		});
 		this.witchAnimation();
 		this.aLevels = this.oGameManager.aLevels;
 		this.oGameOptions = this.oGameManager.oGameOptions;
@@ -134,7 +141,7 @@ export default class Level extends Phaser.Scene {
 		}
 		this.activeClock = Phaser.Utils.Array.GetRandom(this.clocksArray);
 		this.activeClock.setTexture('active-clock');
-		this.activeClock.face.setTexture("activeClock-face");
+		this.activeClock.face.setTexture("activeClock-face").setOrigin(0.5, 0.5);
 		this.activeClock.face.visible = true;
 		this.activeClock.hand.tintFill = true;
 		this.ball = this.physics.add.sprite(this.game.config.width / 2, this.game.config.height / 2, "activeClock-face").setScale(0.2);
@@ -162,7 +169,7 @@ export default class Level extends Phaser.Scene {
 		handSprite.rotation = Phaser.Math.Angle.Random();
 		handSprite.body.angularVelocity = Phaser.Math.RND.between(this.aLevels[gameOptions.startingLevel].clockSpeed[0], this.aLevels[gameOptions.startingLevel].clockSpeed[1]) * Phaser.Math.RND.sign();
 		clockSprite.hand = handSprite;
-		const faceSprite = this.faceGroup.create(clockSprite.x, clockSprite.y, prefix + "face").setScale(scale);
+		const faceSprite = this.faceGroup.create(clockSprite.x, clockSprite.y, prefix + "face").setScale(scale).setOrigin(0.5, 0.485);
 		faceSprite.rotation = handSprite.rotation;
 		faceSprite.body.angularVelocity = handSprite.body.angularVelocity;
 		clockSprite.face = faceSprite;
@@ -187,7 +194,7 @@ export default class Level extends Phaser.Scene {
 	handleOverlap(ball, clock) {
 		if (!this.canFire) {
 			clock.setTexture("active-clock");
-			clock.face.setTexture("activeClock-face");
+			clock.face.setTexture("activeClock-face").setOrigin(0.5, 0.5);
 			clock.hand.tintFill = true;
 			clock.setVisible(false);
 			clock.face.setVisible(false);
@@ -202,9 +209,12 @@ export default class Level extends Phaser.Scene {
 			}
 			else {
 				this.ball.destroy();
+				this.activeClock.destroy();
+				this.activeClock.hand.destroy();
+				this.activeClock.face.destroy();
 				gameOptions.startingLevel = (gameOptions.startingLevel + 1) % this.aLevels.length;
 				this.time.addEvent({
-					delay: 1500,
+					delay: 1000,
 					callbackScope: this,
 					callback: () => {
 						this.scene.start("Level");

@@ -28,6 +28,7 @@
             "type": "Text",
             "id": "2ce42443-5227-4c9b-b498-e81f9a21cde3",
             "label": "progress",
+            "scope": "CLASS",
             "components": [
                 "PreloadText"
             ],
@@ -40,16 +41,15 @@
             "fontSize": "100px"
         },
         {
-            "type": "Image",
-            "id": "c5ad79d0-7423-4eea-9892-4c099eab4749",
+            "prefabId": "4851cc28-a2d2-40aa-a29b-460bcab24f42",
+            "id": "521db438-d3fd-4839-91bb-7a8bfea4e8fd",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "logo",
-            "texture": {
-                "key": "logo"
-            },
-            "x": 320,
-            "y": 281,
-            "scaleX": 0.6,
-            "scaleY": 0.6
+            "x": 304,
+            "y": 254
         }
     ],
     "plainObjects": [],

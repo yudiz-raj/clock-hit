@@ -72,11 +72,6 @@
                 "key": "blastAnimation"
             },
             {
-                "url": "assets/images/game-screen/clock.png",
-                "type": "image",
-                "key": "clock"
-            },
-            {
                 "url": "assets/images/game-screen/game-screen-bg.png",
                 "type": "image",
                 "key": "game-screen-bg"
@@ -97,24 +92,9 @@
                 "key": "Home"
             },
             {
-                "url": "assets/images/game-screen/inactiveClock-face.png",
-                "type": "image",
-                "key": "inactiveClock-face"
-            },
-            {
-                "url": "assets/images/game-screen/inactiveClock-hand.png",
-                "type": "image",
-                "key": "inactiveClock-hand"
-            },
-            {
                 "url": "assets/images/game-screen/level-base.png",
                 "type": "image",
                 "key": "level-base"
-            },
-            {
-                "url": "src/prefabs/Logo.js",
-                "type": "script",
-                "key": "Logo"
             },
             {
                 "url": "assets/images/game-screen/witch.png",

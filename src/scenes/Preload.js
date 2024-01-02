@@ -34,15 +34,19 @@ class Preload extends Phaser.Scene {
 		progress.setStyle({ "fontFamily": "ButterHaunted", "fontSize": "100px" });
 
 		// logo
-		const logo = this.add.image(320, 281, "logo");
-		logo.scaleX = 0.6;
-		logo.scaleY = 0.6;
+		const logo = new Logo(this, 304, 254);
+		this.add.existing(logo);
 
 		// progress (components)
 		new PreloadText(progress);
 
+		this.progress = progress;
+
 		this.events.emit("scene-awake");
 	}
+
+	/** @type {Phaser.GameObjects.Text} */
+	progress;
 
 	/* START-USER-CODE */
 
@@ -54,7 +58,35 @@ class Preload extends Phaser.Scene {
 
 		this.editorPreload();
 
-		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Home"));
+		this.isGameLoaded1 = false;
+		this.isGameLoaded2 = false;
+		this.load.on(Phaser.Loader.Events.COMPLETE, (p) => {
+			this.isGameLoaded1 = true;
+		});
+		const loadingDuration = 3000;
+		const intervalDuration = 30;
+		const numIntervals = loadingDuration / intervalDuration;
+		let currentInterval = 0;
+		const progressIncrement = 1 / numIntervals;
+
+		const updateProgressBar = () => {
+			const currentProgress = currentInterval * progressIncrement;
+			this.progress.setText((currentProgress * 100).toFixed(0) + '%');
+			currentInterval++;
+			if (currentProgress >= 1) {
+				clearInterval(progressInterval);
+				this.isGameLoaded2 = true;
+			}
+		};
+
+		const progressInterval = setInterval(updateProgressBar, intervalDuration);
+	}
+
+	update() {
+		if (this.isGameLoaded1 && this.isGameLoaded2) {
+			this.scene.stop("Preload");
+			this.scene.start("Home");
+		}
 	}
 
 	/* END-USER-CODE */

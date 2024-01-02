@@ -65,7 +65,8 @@
                     "x": -5,
                     "y": -68,
                     "scaleX": 0.4,
-                    "scaleY": 0.4
+                    "scaleY": 0.4,
+                    "originY": 0.485
                 }
             ]
         }

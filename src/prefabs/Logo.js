@@ -31,6 +31,7 @@ class Logo extends Phaser.GameObjects.Container {
 		const inactiveClock_face = scene.add.image(-5, -68, "inactiveClock-face");
 		inactiveClock_face.scaleX = 0.4;
 		inactiveClock_face.scaleY = 0.4;
+		inactiveClock_face.setOrigin(0.5, 0.485);
 		this.add(inactiveClock_face);
 
 		this.inactiveClock_hand = inactiveClock_hand;
