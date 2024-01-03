@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>Clock hit</title>
+	<link rel="shortcut icon" href="assets/images/splash-screen/logo.png" type="image/png">
 
 	<script src="lib/phaser.min.js"></script>
 	<script src="src/components/UserComponent.js"></script>
@@ -26,12 +27,30 @@
 			background: linear-gradient(to bottom, #0A1614, #1E3632, #1D3632, #305751, #0F3019);
 			margin: 0;
 			padding: 0;
+			overflow: hidden;
+		}
+
+		canvas {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0 !important;
+		}
+
+		#game-division {
+			max-height: calc(var(--vh, 1vh) * 100);
+		}
+
+		:root {
+			--vh: 1vh;
 		}
 	</style>
 
 </head>
 
 <body>
+	<div id="game-division"></div>
 </body>
 
 </html>
