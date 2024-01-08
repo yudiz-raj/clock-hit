@@ -28,7 +28,7 @@ class Preload extends Phaser.Scene {
 		splash_screen_bg.scaleY = 0.5;
 
 		// progress
-		const progress = this.add.text(320, 818, "", {});
+		const progress = this.add.text(333, 818, "", {});
 		progress.setOrigin(0.5, 0.5);
 		progress.text = "0%";
 		progress.setStyle({ "fontFamily": "ButterHaunted", "fontSize": "100px" });
