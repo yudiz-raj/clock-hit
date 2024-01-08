@@ -34,7 +34,7 @@ class Preload extends Phaser.Scene {
 		progress.setStyle({ "fontFamily": "ButterHaunted", "fontSize": "100px" });
 
 		// logo
-		const logo = new Logo(this, 304, 254);
+		const logo = new Logo(this, 311, 254);
 		this.add.existing(logo);
 
 		// progress (components)

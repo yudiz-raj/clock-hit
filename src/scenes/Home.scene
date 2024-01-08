@@ -30,7 +30,7 @@
             "texture": {
                 "key": "play-button"
             },
-            "x": 320,
+            "x": 333,
             "y": 818,
             "scaleX": 0.5,
             "scaleY": 0.5
@@ -57,7 +57,7 @@
             ],
             "label": "logo",
             "scope": "CLASS",
-            "x": 304,
+            "x": 311,
             "y": 254
         }
     ],

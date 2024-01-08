@@ -22,7 +22,7 @@ class Home extends Phaser.Scene {
 		splash_screen_bg.scaleY = 0.5;
 
 		// play_button
-		const play_button = this.add.image(320, 818, "play-button");
+		const play_button = this.add.image(333, 818, "play-button");
 		play_button.setInteractive(this.input.makePixelPerfect());
 		play_button.scaleX = 0.5;
 		play_button.scaleY = 0.5;
@@ -33,7 +33,7 @@ class Home extends Phaser.Scene {
 		witch.scaleY = 0.8;
 
 		// logo
-		const logo = new Logo(this, 304, 254);
+		const logo = new Logo(this, 311, 254);
 		this.add.existing(logo);
 
 		this.play_button = play_button;
